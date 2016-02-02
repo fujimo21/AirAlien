@@ -123,6 +123,10 @@
 				</div>
 
 			<% end %>
+			
+			<br>
+			
+			<%= link_to "Delete", @room, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-primary" %>
 
 		</div>
 	</div>
