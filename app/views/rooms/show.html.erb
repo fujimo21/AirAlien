@@ -58,6 +58,7 @@
 		
 			<div class="col-md-4">
 				<!-- Reservation form -->
+				<%= render 'reservations/form' %>
 			</div>
 		</div>
 			
@@ -131,7 +132,7 @@
 		</div>
 		
 		<br>
-		<hr>
+		<br>
 		
 		<!-- Google Map -->
 		<div class="row">
@@ -155,11 +156,11 @@
 		        });
 		        var marker = new google.maps.Marker({
 		        	position: {lat: <%= @room.latitude %>, lng: <%= @room.longitude %>}
-		        	title: "AirAlien"
 		        });
 		        
 		        marker.setMap(map);
 		      }
+		      google.map.event.addDomListener(window, 'load', initialize);
 		    </script>
 		    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
 		        async defer>
