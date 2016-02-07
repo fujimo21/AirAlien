@@ -29,6 +29,8 @@ gem 'jquery-ui-sass-rails'
 gem 'private_pub'
 gem 'thin'
 
+gem 'ransack'
+
 
 group :development, :test do
   gem 'byebug'
